@@ -1,0 +1,21 @@
+Count positive numbers until -1 using do-while.
+
+
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+
+    do {
+        printf("Enter a number (-1 to stop): ");
+        scanf("%d", &num);
+
+        if (num > 0) {
+            count++;
+        }
+
+    } while (num != -1);
+
+    printf("You entered %d positive numbers.\n", count);
+    return 0;
+}
